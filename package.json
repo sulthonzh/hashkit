@@ -1,0 +1,18 @@
+{
+  "name": "hashkit",
+  "version": "1.0.0",
+  "description": "Zero-dependency non-cryptographic hash functions for Node.js — murmurhash3, FNV-1a, DJB2, xxHash32, CRC32, and more",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "hashkit": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/test/*.test.js"
+  },
+  "keywords": ["hash", "murmurhash", "fnv", "xxhash", "crc32", "djb2", "non-cryptographic", "zero-dependency"],
+  "license": "MIT",
+  "author": "sulthonzh"
+}
