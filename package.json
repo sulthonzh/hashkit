@@ -9,10 +9,39 @@
     "hashkit": "dist/cli.js"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "node --test dist/test/*.test.js"
+    "build": "tsc -p tsconfig.build.json",
+    "test": "tsc && node --test dist/test/*.test.js",
+    "prepublishOnly": "npm run build && npm test"
   },
-  "keywords": ["hash", "murmurhash", "fnv", "xxhash", "crc32", "djb2", "non-cryptographic", "zero-dependency"],
+  "keywords": [
+    "hash",
+    "murmurhash",
+    "fnv",
+    "xxhash",
+    "crc32",
+    "djb2",
+    "non-cryptographic",
+    "zero-dependency"
+  ],
   "license": "MIT",
-  "author": "sulthonzh"
+  "author": "sulthonzh",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "!dist/test/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulthonzh/hashkit.git"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0",
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2"
+  }
 }
