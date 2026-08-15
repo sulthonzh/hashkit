@@ -1,5 +1,5 @@
 {
-  "name": "hashkit",
+  "name": "@quadbyte/hashkit",
   "version": "1.0.0",
   "description": "Zero-dependency non-cryptographic hash functions for Node.js — murmurhash3, FNV-1a, DJB2, xxHash32, CRC32, and more",
   "main": "dist/index.js",

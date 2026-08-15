@@ -7,7 +7,7 @@ Fast, well-distributed hashing for hash tables, bloom filters, checksums, and ge
 ## Install
 
 ```bash
-npm install hashkit
+npm install @quadbyte/hashkit
 ```
 
 ## Algorithms
@@ -26,7 +26,7 @@ npm install hashkit
 ## Usage
 
 ```typescript
-import { murmurhash3_32, fnv1a, xxhash32, crc32, hash } from 'hashkit';
+import { murmurhash3_32, fnv1a, xxhash32, crc32, hash } from '@quadbyte/hashkit';
 
 // Default hash (murmurhash3)
 const h = hash('hello world');
